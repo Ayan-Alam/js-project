@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<script src="./DOM.js"></script>
+<body>
+  <div class="container">
+    <h2>Expense Tracker App </h2>
+    <form id="addform">
+      <div class="form-group">
+        <label for="chooseExpenseAmount">Expense Amount:</label>
+        <input type="number" class="form-control" id="chooseExpenseAmount" name="chooseExpenseAmount">
+      </div>
+      <div class="form-group">
+        <label for="chooseDescription">Description:</label>
+        <input type="text" class="form-control" id="chooseDescription" name="chooseDescription">
+      </div>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select class="form-control" id="category" name="category">
+          <option value="" selected disabled>Select category</option>
+          <option value="fuel">Fuel</option>
+          <option value="food">Food</option>
+          <option value="electricity">Electricity</option>
+          <option value="movie">Movie</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <h2>List:</h2>
+    <ul id="list-items"></ul>
+  </div>
+</body>
+</html>
